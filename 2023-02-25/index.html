@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+</head>
+
+<body>
+    <h1>Exercício 1</h1>
+    <label for="numero">Informe um número:</label>
+    <input type="text" name="numero" id="numero">
+    <input type="button" value="Ver próximos" onclick="numbers()">
+    <div id="numeros"></div>
+    
+    <h1>Exercício 2</h1>
+    <label for="valConta">Digite o valor da conta:</label>
+    <input type="text" name="valConta" id="valConta"><br>
+    <label for="pagantesConta">Informe quantidade de pagantes:</label>
+    <input type="text" name="pagantesConta" id="pagantesConta">
+    <input type="button" value="Calcular" onclick="calcularConta()">
+    <div id="mediaConta"></div>
+
+    <h1>Exercício 3</h1>
+    <label for="valProduto">Digite o valor da conta:</label>
+    <input type="text" name="valProduto" id="valProduto"><br>
+    <label for="formaPagamento">Informe quantidade de pagantes:</label>
+    <input type="radio" name="formaPagamento" id="formaPagamento" value="1"> À vista
+    <input type="radio" name="formaPagamento" id="formaPagamento1" value="2"> À prazo
+    <input type="button" value="Calcular" onclick="calcularValor()">
+    <div id="resultado"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
