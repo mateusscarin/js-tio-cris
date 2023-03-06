@@ -67,3 +67,4 @@ for...in X for...of
 ## Objeto Math
 - Math.abs(x)
 - Math.PI
+- Math.trunc -> retorna parte inteira de um número decimal

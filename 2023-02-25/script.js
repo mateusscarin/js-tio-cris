@@ -50,7 +50,7 @@ function calcularValor() {
             document.getElementById('resultado').innerText = 'Valor à pagar: ' + valProduto * 0.9;
             break;
         case 2:
-            document.getElementById('resultado').innerText = 'Valor das parcelas: ' + valProduto / 3;
+            document.getElementById('resultado').innerText = 'Valor das parcelas: ' + (valProduto / 3).toFixed(2);
             break;
         default:
             document.getElementById('resultado').innerText = 'Larga de ser mosca escolhe a forma de pagamento...';

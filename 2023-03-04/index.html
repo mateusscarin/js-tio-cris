@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores - JS</title>
+</head>
+
+<body>
+    <h1>Lista de Exercícios - Operadores</h1>
+    <h2>Exercício 1 - Locadora JS</h2>
+    <div style="display: flex; flex-direction: column; width: 300px;">
+        <label for="nomeFilme">Título do Filme</label>
+        <input type="text" name="nomeFilme" id="nomeFilme" placeholder="Informe o nome do filme">
+        <label for="duracaoFilme">Duração (min.)</label>
+        <input type="number" name="duracaoFilme" id="duracaoFilme" placeholder="Informe a duração do filme">
+        <input type="submit" value="Converter em horas e minutos" onclick="converterDuracao()">
+        <p id="mostraConversao"></p>
+    </div>
+    <h2>Exercício 2 - Garagem JS</h2>
+    <div style="display: flex; flex-direction: column; width: 300px;">
+        <label for="automovel">Veículo</label>
+        <input type="text" name="automovel" id="automovel" placeholder="Informe o nome do veículo">
+        <label for="valorVeiculo">Valor (R$)</label>
+        <input type="number" name="valorVeiculo" id="valorVeiculo" placeholder="Informe o valor do veículo">
+        <input type="submit" value="Ver promoção" onclick="calcularPromocao()">
+        <p id="mostraPromocao"></p>
+    </div>
+    <h2>Exercício 3 - Açougue JS</h2>
+    <div style="display: flex; flex-direction: column; width: 300px;">
+        <label for="qntProduto">Quantidade comprada (g)</label>
+        <input type="number" name="qntProduto" id="qntProduto" placeholder="Informe a quantidade comprada">
+        <input type="submit" value="Calcular" onclick="calcularValor()">
+        <p id="mostraValorPagar"></p>
+    </div>
+    <h2>Exercício 4 - Farmácia JS</h2>
+    <div style="display: flex; flex-direction: column; width: 300px;">
+        <label for="nomeMedicamento">Nome medicamento</label>
+        <input type="text" name="nomeMedicamento" id="nomeMedicamento" placeholder="Informe o nome do medicamento">
+        <label for="valorMedicamento">Valor (R$)</label>
+        <input type="number" name="valorMedicamento" id="valorMedicamento" placeholder="Informe o valor do medicamento">
+        <input type="submit" value="Mostrar promoção" onclick="calcularPromocaoMedicamento()">
+        <p id="mostraPromocaoMedicamento"></p>
+    </div>
+    <h2>Exercício 5 - Lan House JS</h2>
+    <div style="display: flex; flex-direction: column; width: 300px;">
+        <label for="valorPeloTempo">Valor por 15min (R$)</label>
+        <input type="number" name="valorPeloTempo" id="valorPeloTempo"
+            placeholder="Informe o valor a ser cobrado a cada 15 min">
+        <label for="tempoUso">Tempo de utilização</label>
+        <input type="number" name="tempoUso" id="tempoUso" placeholder="Tempo de uso do cliente">
+        <input type="submit" value="Calcular valor a pagar" onclick="calcularValorLanHouse()">
+        <p id="mostraValorLanHouse"></p>
+    </div>
+    <h2>Exercício 6 - Supermercado JS</h2>
+    <div style="display: flex; flex-direction: column; width: 300px;">
+        <label for="nomeProduto">Nome do produto</label>
+        <input type="text" name="nomeProduto" id="nomeProduto" placeholder="Informe o nome do produto">
+        <label for="precoProduto">Informe o valor do produto</label>
+        <input type="number" name="precoProduto" id="precoProduto" placeholder="informe o valor do produto">
+        <input type="submit" value="Ver promoção" onclick="calcularPromocaoSupermercado()">
+        <p id="mostraPromocaoSupermercado"></p>
+    </div>
+    <script src="script.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
