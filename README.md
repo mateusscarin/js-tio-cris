@@ -68,3 +68,16 @@ for...in X for...of
 - Math.abs(x)
 - Math.PI
 - Math.trunc -> retorna parte inteira de um número decimal
+
+## Objetos
+- Objeto: coleção de propriedades
+    - chave : valor
+
+## Objetos Literais
+- Este é o tipo básico de objetos JavaScript;
+- É o formato popularizado através do JSON (JavaScript Object Notation);
+- O objeto é criado utilzado um par de chaves ({}) e suas propriedades e métodos são todos os públicos. Este tipo de objeto também é chamado de objeto estático;
+- Todo objeto literal é um objeto único e mesmo que você armazene ele em diferentes variáveis todas apontarão para o mesmo objeto;
+- Seu uso é recomendado em situações onde não podem existir mais de uma instância do objeto.
+
+## Sintaxe literal
