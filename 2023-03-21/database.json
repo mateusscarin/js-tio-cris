@@ -1,0 +1,29 @@
+{
+    "alunos": [
+        {
+            "nome": "Joas",
+            "disciplina": "JavaScript",
+            "media": 10.0
+        },
+        {
+            "nome": "Scarin",
+            "disciplina": "Matemática",
+            "media": 8.5
+        },
+        {
+            "nome": "João",
+            "disciplina": "Português",
+            "media": 9.0
+        },
+        {
+            "nome": "Carlos",
+            "disciplina": "Sistemas Operacionais",
+            "media": 8.0
+        },
+        {
+            "nome": "Gustavo",
+            "disciplina": "Acessibilidade",
+            "media": 7.0
+        }
+    ]
+}
