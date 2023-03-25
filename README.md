@@ -81,3 +81,64 @@ for...in X for...of
 - Seu uso é recomendado em situações onde não podem existir mais de uma instância do objeto.
 
 ## Sintaxe literal
+
+
+## Construtores
+- servem para contruir Objetos;
+ fu
+
+## Private fields
+- utilizando cerquilha (#);
+- `#fullName`;
+
+## Herança
+- utilizando `extends`
+- método estático
+    - declaração: `static metodoEstatico();`
+    - utilização: `NomeDaClasse.metodoEstatico();`
+
+## Clone or copy an Object
+- criar um novo objeto a partir de outro;
+- `const travel = { country: "India", city: "Mumbai"}`
+- Spread -> laço copiando elemento por elemento
+    - `const clone1 = {...travel}`
+- Object.create
+    - `const clone2 = Object.create(travel)`
+- Object.assign
+    - `const clone3 = Object.assign({}, travel)`
+- JSON
+    - `const clone4 = JSON.parse(JSON.stringify(travel))`
+- `RESULT: { Country : "India", City: "Mumbai" }`
+
+## JSON
+- JavaScript Object Notation;
+- não pode ter funções;
+- todo texto sempre tem aspas duplas;
+- as propriedades sempre tem aspas duplas
+```js
+// JSON -> Object
+let obj = JSON.parse(json);
+
+// Object -> JSON
+let json = JSON.stringify(obj);
+```
+
+## Definindo getters e setters
+- Um *getter* é um método que obtém o valor de uma propriedade específica;
+- Um *setter* é um método que define o valor de uma propriedade específica;
+- Você pode definir getters e setters em qualquer objeto de núcleo pré-definido pelo usuário que suporta a adição de novas propriedades. A sintaxe para definir getters e setters usa a sintaxe literal do objeto;
+```js
+class Pessoa {
+    constructor(name) {
+        this._name = name;
+    }
+
+    get name(){
+        return this._name.toUpperCase();
+    }
+
+    set name(newName){
+        this._name = newName;
+    }
+}
+```
