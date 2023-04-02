@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<input type="submit" value="Listar os estados" onclick="mostrar(0)" />
+<input type="submit" value="Agrupar os estados por região" onclick="mostrar(1)" />
+<input type="text" id="search" placeholder="Buscar UF" maxlength="2" /> <input type="submit" value="Buscar pela sigla"
+    onclick="mostrar(2)"/>
+<table id="tableResults" border="1"></table>
+<script src="script.js"></script>
+</body>
+
+</html>

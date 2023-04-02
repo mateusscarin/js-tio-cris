@@ -1,17 +1,5 @@
-tabelaAlunos = document.getElementById("tabelaAlunos");
-media = document.getElementById('media');
-
-fetch("database.json").then((response) => {
-    response.json().then((dados) => {
-        dados.alunos.map((aluno) => {
-            tabelaAlunos.innerHTML += `
-            <td>${aluno.nome}</td>
-            <td>${aluno.disciplina}</td>
-            <td>${aluno.media}</td>
-        `
-        })
-    })
-})
+const tabelaAlunos = document.getElementById("tabelaAlunos");
+const media = document.getElementById('media');
 
 function popularLista(param) {
     tabelaAlunos.innerHTML = ``;
@@ -30,7 +18,7 @@ function popularLista(param) {
                         `<h5> A média é:
                     ${dados.alunos.reduce((soma, aluno) => {
                             return soma + aluno.media;
-                        }, 0) / 5}
+                        }, 0) / dados.alunos.length}
                     </h5>`;
                     break;
                 default:
@@ -47,3 +35,5 @@ function popularLista(param) {
         })
     })
 }
+
+popularLista();
