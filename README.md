@@ -142,3 +142,57 @@ class Pessoa {
     }
 }
 ```
+
+## Funções
+- Função é um poderoso objeto destinado a executar uma ação;
+- É um bloco de código capaz de realizar ações;
+- Declaração de função:
+```js
+function minhaFuncao(){
+    // bloco de código
+}
+```
+- Expressão de função:
+```js
+const minhaFuncao = function(){
+    // bloco de código
+}
+```
+- Com o uso objeto construtor precedido da palavra-chave new:
+```js
+let minhaFuncao = new Function(/*bloco de código*/);
+```
+
+### Declarações X expressões
+- Declaração de funções:
+```js
+let result = add(5,5);
+function add(num1, num2){
+    return num1 + num2;
+}
+```
+- Expressão de Funções:
+```js
+let result = add(5,5);  //ERRO!!!
+let add = function(num1, num2){
+    return num1 + num2;
+}
+```
+
+### Parâmetros
+- É possível sem passar qualquer quantidade de parâmetros para qualquer função sem causar erros;
+- Os parâmetros são armazenados em um estrutura semelhante a **arrays** chamada ***arguments***;
+- ***arguments*** pode receber qualquer quantidade de valores.
+
+### Funções de seta => arrow functions
+```js
+let circleArea = (r) => {
+    let PI = 3.14;
+    let area = PI * r * r;
+    return area;
+}
+console.log(circleArea(2))
+
+let cicleArea2 = (r) => 3.14 * r * r;
+console.log(circleArea2(2));
+```
