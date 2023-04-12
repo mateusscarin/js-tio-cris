@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="let retangulo=calculaRetangulo(8,4); alert('Area: ' + retangulo.area); 
+    alert('Perímetro: ' + retangulo.perimetro);"> Executar função</button>
+
+    <script>
+        function calculaRetangulo(b, h){
+            let valor_area = (b * h);
+            let valor_perimetro = (b + h) * 2;
+            return {
+                area : valor_area,
+                perimetro : valor_perimetro
+            };
+        };
+    </script>
+</body>
+</html>
