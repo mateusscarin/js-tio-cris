@@ -9,13 +9,32 @@
 </head>
 
 <body>
-    <div id="view-word"></div>
-    <div id="word"></div>
-    <div id="cont-errors"></div>
+    <style>
+        * {
+            font-size: 1.1rem;
+        }
 
-    <div>
-        <input type="text" name="letter" id="letter-test" maxlength="1" placeholder="Informe apenas letras" required>
-        <button onclick="letterMatch()">Match?</button>
+        h1 {
+            font-size: 1.4rem;
+        }
+    </style>
+    <div style="display: flex; justify-content: center;">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <h1>Linguagens de programação</h1>
+            <div id="view-word"></div>
+            <div id="word"></div>
+            <div id="cont-errors"></div>
+
+            <div id="input-match">
+                <input type="text" name="letter" id="letter-test" maxlength="1" placeholder="Informe apenas letras"
+                    required>
+                <button onclick="letterMatch()">Match?</button>
+            </div>
+            <div id="informed-letters"></div>
+            <div id="img-errors">
+                <img src="" alt="">
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
