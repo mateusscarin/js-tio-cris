@@ -196,3 +196,125 @@ console.log(circleArea(2))
 let cicleArea2 = (r) => 3.14 * r * r;
 console.log(circleArea2(2));
 ```
+
+### Escopo da função
+- O corpo de uma função cria um escopo local para variáveis nele declaradas
+
+### Closures
+- Declarar funções dentro de outras funções
+
+### Funções globais
+- Funções que não estão associadas a um objeto particular da linguagem
+    - eval(código): executar um script inserido no argumento código;
+    - isFinite(valor): testa um valor passado como argumento da função. TRUE se for número ou FALSE caso contrário;
+    - isNaN(valor): testa um valor passado como argumento da função. TRUE se não for um número e FALSO caso contrário.
+
+### Invocando funções
+```js
+function hello(){
+    return 'Hi!';
+}
+console.log(hello()); //Hi!
+```
+```js
+(function() {
+    return 'oi';
+}());
+// oi
+```
+```js
+(function() {
+    return 'oi';
+})();
+// oi
+```
+
+#### Operador no lugar do parênteses
+!function(){}
++function(){}
+-function(){}
+~function(){}
+
+## Objeto Array
+- Array é um objeto destinado a armazenar uma coleção ordenada de dados indexados sequencialmente a partir de zero
+- Arrays podem conter dados do tipo objeto
+
+### Métodos do objeto Array
+- concat(arg1, arg2, arg3, ..., argn)
+```js
+    let arr = [1, 2, "a", "b"];
+    let a = array.concat("m", "32");
+    // resulta em a = [1, 2, "a", "b", "m", 32];
+```
+- every(função(elem, ind, obj), [,thisObjeto])
+```js
+    let arr = [21, 3, 18, 290];
+    function funcaoUm(elem, ind){
+        return (typeOf elem == "number");
+    }
+
+    let x = arr. every(funcaoUm);
+    console.log(x); // retorna true, se todos são números
+```
+- some(função(elem, ind, obj)[,thisObjeto])
+```js
+    let arr = [21, 3, 18, 290];
+    function funcaoUm(elem, ind){
+        return (typeOf elem == "number");
+    }
+
+    let x = arr. every(funcaoUm);
+    console.log(x); // retorna true, se pelo menos 1 atender a condição
+```
+- filter(função(elem, ind, obj)[,thisObjeto])
+```js
+    let arr = [21, 3, 18, 290, "a", "b"];
+    function filtrarArray(elem, ind){
+        return (elem >= 18);
+    }
+    let x = arr.filter(filtrarArray);
+    console.log(x);    // retorna [21, 18, 290]
+```
+- forEach(função(elem, ind, obj)[,thisObjeto])
+```js
+    let arr = [21, 3, 18, 290, "a", "b", 7];
+    let msg = "";
+    function funcaoUm(elem, ind, obj){
+        msg += `array[${ind}] = ${elem}\n`
+    }
+```
+- find(função(elem, ind, obj)[,thisObjeto])
+```js
+    const arr = [1,2,3,4,5,6,7,4]
+    console.log(arr.find(numero => numero == 4));
+```
+- indexOf(elemento, [arg2, true ou false])
+```js
+    let arr = [1,2,"a", "b", "2", "c", 1, "a", "45"];
+    let a = arr.indexOf("b");   // retorna 3
+    let b = arr.indexOf("a");   // retorna 2
+    let c = arr.indexOf(23);    // retorna -1
+```
+- lastIndexOf(elemento, [arg2, true ou false])
+```js
+    let arr = [1,2,"a", "b", "2", "c", 1, "a", "45"];
+    let a = arr.indexOf("a");   // retorna 2
+    let b = arr.lastIndexOf("a");   // retorna 7
+```
+- join([agr])
+```js
+    let arr = [1,2,"a", "b"];
+    let a = arr.join();           // resulta na string c = "1,2,a,b"
+    let b = arr.join(" - ");      // resulta na string c = "1 - 2 - a - b"
+    let c = arr.join("*");        // resulta na string c = "1*2*a*b"
+```
+- map(função(elem, ind, obj)[,thisObjeto])
+```js
+let arr = [21, 3, 18, 290];
+function funcaoUm(elem, ind, obj){
+    return (elem = elem * 10;);
+}
+
+let x = arr.map(funcaoUm);
+console.log(x);    //retorna [210, 30, 180, 2900]
+```
