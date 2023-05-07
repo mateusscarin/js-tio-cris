@@ -297,7 +297,7 @@ console.log(hello()); //Hi!
     // resulta em a = [1, 2, "a", "b", "m", 32];
 ```
 
-- every(função(elem, ind, obj), [,thisObjeto])
+- every(função(elem, ind, obj) [,thisObjeto])
 
 ```js
     let arr = [21, 3, 18, 290];
@@ -309,7 +309,7 @@ console.log(hello()); //Hi!
     console.log(x); // retorna true, se todos são números
 ```
 
-- some(função[elem, ind, obj](,thisObjeto))
+- some (função(elem, ind, obj) [,thisObjeto])
 
 ```js
     let arr = [21, 3, 18, 290];
@@ -321,7 +321,7 @@ console.log(hello()); //Hi!
     console.log(x); // retorna true, se pelo menos 1 atender a condição
 ```
 
-- filter(função[elem, ind, obj](,thisObjeto))
+- filter (função(elem, ind, obj) [,thisObjeto])
 
 ```js
     let arr = [21, 3, 18, 290, "a", "b"];
@@ -332,7 +332,7 @@ console.log(hello()); //Hi!
     console.log(x);    // retorna [21, 18, 290]
 ```
 
-- forEach(função[elem, ind, obj](,thisObjeto))
+- forEach(função(elem, ind, obj) [,thisObjeto])
 
 ```js
     let arr = [21, 3, 18, 290, "a", "b", 7];
@@ -342,7 +342,7 @@ console.log(hello()); //Hi!
     }
 ```
 
-- find(função[elem, ind, obj](,thisObjeto))
+- find(função(elem, ind, obj) [,thisObjeto])
 
 ```js
     const arr = [1,2,3,4,5,6,7,4]
@@ -375,8 +375,7 @@ console.log(hello()); //Hi!
     let c = arr.join("*");        // resulta na string c = "1*2*a*b"
 ```
 
-- map(função[elem, ind, obj](,thisObjeto))
-
+- map(função(elem, ind, obj) [,thisObjeto])
 ```js
 let arr = [21, 3, 18, 290];
 function funcaoUm(elem, ind, obj){
