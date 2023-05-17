@@ -556,3 +556,12 @@ console.log (meuSet);              // Set { 1,'texto',{a:1,b:2}, {a:1,b:2}}
     let reverseStr = str => str.split('').reverse().join('');
     console.log(reverseStr("html"));   //lmth
 ```
+
+## DOM - Document Object Model
+### Introdução
+
+### Nó
+- Para criar o DOM de um documento, cada elemento do HTML é conhecido como nó;
+#### Tipos de nó
+- Texto
+- Atributos
