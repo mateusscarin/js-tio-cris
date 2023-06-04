@@ -406,7 +406,8 @@ console.log(x);    //retorna [210, 30, 180, 2900]
 
 - shift(): remove o primeiro elemento de um array e retorna o valor que foi removido;
 ```js
-    let arr  = [1, 2, "a", "b"];let a = arr.shie( ); //resulta em a = 1 e arr.length = 3
+    let arr  = [1, 2, "a", "b"];
+    let a = arr.shift(); //resulta em a = 1 e arr.length = 3
 ```
 
 - unshift(): adiciona elemento a primeira posição do array;
@@ -556,12 +557,3 @@ console.log (meuSet);              // Set { 1,'texto',{a:1,b:2}, {a:1,b:2}}
     let reverseStr = str => str.split('').reverse().join('');
     console.log(reverseStr("html"));   //lmth
 ```
-
-## DOM - Document Object Model
-### Introdução
-
-### Nó
-- Para criar o DOM de um documento, cada elemento do HTML é conhecido como nó;
-#### Tipos de nó
-- Texto
-- Atributos
