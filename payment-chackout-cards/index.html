@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div>
+                <label for="numCartao">Número do cartão</label>
+                <input type="text" id="numCartao" maxlength="19" tabindex="1" onfocus="alterCard(0)"
+                    autocomplete="off">
+            </div>
+            <div>
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" tabindex="2" maxlength="20" onfocus="alterCard(0)" autocomplete="off">
+            </div>
+            <div>
+                <label for="dataVencimento">Data de vencimento</label>
+                <input type="text" id="dataVencimento" placeholder="MM/AA" maxlength="5" tabindex="3"
+                    autocomplete="off" onfocus="alterCard(0)">
+            </div>
+            <div>
+                <label for="codSeguranca">Código de segurança</label>
+                <input type="text" id="codSeguranca" maxlength="3" tabindex="4" onfocus="alterCard(1)"
+                    autocomplete="off">
+            </div>
+            <div>
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" placeholder="000.000.000-00" maxlength="14" tabindex="5"
+                    autocomplete="off" onfocus="alterCard(2)">
+            </div>
+        </form>
+        <div id="cartao">
+            <img src="img/credit-card-frente.jpg" alt="Imagem de cartão frente">
+        </div>
+        <div id="num-cartao" class="numero-cartao"></div>
+        <div id="nome-cartao" class="nome-cartao"></div>
+        <div id="data-venc-cartao" class="data-venc-cartao"></div>
+        <div id="cod-seg-cartao" class="cod-seg-cartao"></div>
+        <div id="cpf-cartao" class="cpf-cartao"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

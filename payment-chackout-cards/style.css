@@ -1,0 +1,46 @@
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+}
+
+.numero-cartao {
+    position: absolute;
+    margin-bottom: -1.5rem;
+    margin-left: 35rem;
+    font-size: 1.5rem;
+}
+
+.nome-cartao {
+    position: absolute;
+    margin-bottom: -8rem;
+    margin-left: 29rem;
+    font-size: 1rem;
+}
+
+.data-venc-cartao {
+    position: absolute;
+    margin-bottom: -6rem;
+    margin-left: 35rem;
+    font-size: 0.8rem;
+}
+
+.cod-seg-cartao {
+    position: absolute;
+    margin-bottom: 0.8rem;
+    margin-left: 45rem;
+    font-size: 1.5rem;
+}
+
+.cpf-cartao {
+    position: absolute;
+    margin-bottom: -5rem;
+    margin-left: 42rem;
+    font-size: 1rem;
+}
