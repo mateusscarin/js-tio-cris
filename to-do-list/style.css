@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .task-item-completed {
+    text-decoration: line-through;
+  }
+  
+  .remove-button {
+    background-color: #ff0000;
+  }
+  
+  .remove-button:hover {
+    background-color: #ff0000;
+  }
